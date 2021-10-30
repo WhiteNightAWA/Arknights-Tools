@@ -1,0 +1,47 @@
+.cursors {
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    position: absolute;
+}
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: top 50ms ease-in-out, left 50ms ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.point {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(0);
+    } 100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+/*.click {*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    border: 1px solid white;*/
+/*    border-radius: 50%;*/
+/*    animation: clickAnim 1s infinite;*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*}*/
+
+#canClick {
+    /*transition: all 0.3s ease-in-out;*/
+    /*transition-property: background-color, transform;*/
+    transform: scale(0.5) translate(-100%, -100%);
+    background: rgba(255, 255, 255, 0.5);
+}
