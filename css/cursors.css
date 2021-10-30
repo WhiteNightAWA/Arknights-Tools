@@ -29,19 +29,32 @@
     }
 }
 
-/*.click {*/
-/*    width: 5px;*/
-/*    height: 5px;*/
-/*    border: 1px solid white;*/
-/*    border-radius: 50%;*/
-/*    animation: clickAnim 1s infinite;*/
-/*    position: absolute;*/
-/*    opacity: 0;*/
-/*}*/
+.click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%, -50%);
+    border: 1px white solid;
+    border-radius: 50%;
+    animation: clickAnim 0.5s forwards;
+}
+
+@keyframes clickAnim {
+    from {
+        width: 5px;
+        height: 5px;
+        opacity: 1;
+    }
+    to {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
 
 #canClick {
-    /*transition: all 0.3s ease-in-out;*/
-    /*transition-property: background-color, transform;*/
     transform: scale(0.5) translate(-100%, -100%);
     background: rgba(255, 255, 255, 0.5);
 }
