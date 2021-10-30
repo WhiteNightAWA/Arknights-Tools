@@ -2,8 +2,9 @@
 document.addEventListener("DOMContentLoaded", function(){
     const point = document.querySelector(".point");
     const cursor = document.querySelector(".cursor");
-    const page = document.querySelector("body")
-    const canClick = document.querySelectorAll("span")
+    const page = document.querySelector("body");
+    const canClick = document.querySelectorAll(".canClick");
+
 
     document.addEventListener("mousemove", e => {
         cursor.style.top = e.pageY + "px";

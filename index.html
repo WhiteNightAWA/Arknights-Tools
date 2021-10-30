@@ -5,10 +5,37 @@
 	<title>Arknights Tools</title>
 	<script src="./js/function.js"></script>
 	<script src="./js/cursors.js"></script>
+	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="css/cursors.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div class="point cursors"></div>
+	<div class="cursor cursors"></div>
+	<div class="sidebar">
+		<div class="logoContext canClick">
+			<div class="logo">
+				<box-icon type="solid" name="box"  color='#ffffff' ></box-icon>
+				<div class="logoName">Arknights Tools</div>
+			</div>
+			<box-icon name='menu' id="menu" color='#ffffff' class="canClick"></box-icon>
+		</div>
+		<ul class="navList">
+			<li>
+				<a href="#" class="canClick">
+					<box-icon name='home' color='#ffffff' ></box-icon>
+					<span class="linksName">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="canClick">
+					<box-icon name='home' color='#ffffff' ></box-icon>
+					<span class="linksName">Home2</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<div class="title">
 		<span style="--i:1">T</span>
 		<span style="--i:2">h</span>
@@ -46,7 +73,5 @@
 		<span style="--i:34">.</span>
 		<span style="--i:35">.</span>
 	</div>
-	<div class="point cursors"></div>
-	<div class="cursor cursors"></div>
 </body>
 </html>

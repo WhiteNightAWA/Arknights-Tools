@@ -2,6 +2,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     position: absolute;
+    z-index: 9;
 }
 
 .cursor {
@@ -18,15 +19,6 @@
     background-color: white;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-}
-
-@keyframes clickAnim {
-    0% {
-        transform: scale(0);
-    } 100% {
-        transform: scale(10);
-        opacity: 0;
-    }
 }
 
 .click {
