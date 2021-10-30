@@ -1,5 +1,5 @@
 .cursors {
-    z-index: 3;
+    z-index: 999;
     transform: translate(-50%, -50%);
     pointer-events: none;
     position: absolute;
@@ -31,6 +31,7 @@
     border: 1px white solid;
     border-radius: 50%;
     animation: clickAnim 0.5s forwards;
+    z-index: 999;
 }
 
 @keyframes clickAnim {

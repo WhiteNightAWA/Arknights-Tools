@@ -5,73 +5,117 @@
 	<title>Arknights Tools</title>
 	<script src="./js/function.js"></script>
 	<script src="./js/cursors.js"></script>
+	<script src="./js/sidebar.js"></script>
 	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/sidebar.css">
 	<link rel="stylesheet" href="css/cursors.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="point cursors"></div>
-	<div class="cursor cursors"></div>
+	<div class="cursors">
+		<div class="point cursors"></div>
+		<div class="cursor cursors"></div>
+	</div>
 	<div class="sidebar">
-		<div class="logoContext canClick">
-			<div class="logo">
-				<box-icon type="solid" name="box"  color='#ffffff' ></box-icon>
-				<div class="logoName">Arknights Tools</div>
-			</div>
-			<box-icon name='menu' id="menu" color='#ffffff' class="canClick"></box-icon>
+		<div class="logo-details">
+			<i class='bx bxs-box icon' style='color:#ffffff'></i>
+			<div class="logo_name">Arknights Tools</div>
+			<i class='bx bx-menu' id="btn" ></i>
 		</div>
-		<ul class="navList">
+		<ul class="nav-list">
 			<li>
-				<a href="#" class="canClick">
-					<box-icon name='home' color='#ffffff' ></box-icon>
-					<span class="linksName">Home</span>
-				</a>
+				<i class='bx bx-search' ></i>
+				<input type="text" placeholder="Search... (developing)">
+				<span class="tooltip">Search</span>
 			</li>
 			<li>
-				<a href="#" class="canClick">
-					<box-icon name='home' color='#ffffff' ></box-icon>
-					<span class="linksName">Home2</span>
+				<a href="#">
+					<i class='bx bx-home'></i>
+					<span class="links_name">Home</span>
 				</a>
+				<span class="tooltip">Home</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-user' ></i>
+					<span class="links_name">test</span>
+				</a>
+				<span class="tooltip">test</span>
+			</li>
+			<li class="profile">
+				<div class="profile-details">
+					<div class="name_job">
+						<div class="name">Language</div>
+						<div class="job">ZH | EN</div>
+					</div>
+				</div>
+				<i class='bx bxs-moon' style='color:#ffffff' id="log_out" ></i>
 			</li>
 		</ul>
 	</div>
-	<div class="title">
-		<span style="--i:1">T</span>
-		<span style="--i:2">h</span>
-		<span style="--i:3">i</span>
-		<span style="--i:4">s</span>
-		<span style="--i:5">-</span>
-		<span style="--i:6">P</span>
-		<span style="--i:7">r</span>
-		<span style="--i:8">o</span>
-		<span style="--i:9">j</span>
-		<span style="--i:10">e</span>
-		<span style="--i:11">c</span>
-		<span style="--i:12">t</span>
-		<span style="--i:13">-</span>
-		<span style="--i:14">i</span>
-		<span style="--i:15">s</span>
-		<span style="--i:16">-</span>
-		<span style="--i:17">s</span>
-		<span style="--i:18">t</span>
-		<span style="--i:19">i</span>
-		<span style="--i:20">l</span>
-		<span style="--i:21">l</span>
-		<span style="--i:22">-</span>
-		<span style="--i:23">i</span>
-		<span style="--i:24">n</span>
-		<span style="--i:25">-</span>
-		<span style="--i:26">p</span>
-		<span style="--i:27">r</span>
-		<span style="--i:28">o</span>
-		<span style="--i:29">c</span>
-		<span style="--i:30">e</span>
-		<span style="--i:31">s</span>
-		<span style="--i:32">s</span>
-		<span style="--i:33">.</span>
-		<span style="--i:34">.</span>
-		<span style="--i:35">.</span>
+	<div class="content">
+		<div class="title">
+			<span style="--i:1">T</span>
+			<span style="--i:2">h</span>
+			<span style="--i:3">i</span>
+			<span style="--i:4">s</span>
+			<span style="--i:5">-</span>
+			<span style="--i:6">P</span>
+			<span style="--i:7">r</span>
+			<span style="--i:8">o</span>
+			<span style="--i:9">j</span>
+			<span style="--i:10">e</span>
+			<span style="--i:11">c</span>
+			<span style="--i:12">t</span>
+			<span style="--i:13">-</span>
+			<span style="--i:14">i</span>
+			<span style="--i:15">s</span>
+			<span style="--i:16">-</span>
+			<span style="--i:17">s</span>
+			<span style="--i:18">t</span>
+			<span style="--i:19">i</span>
+			<span style="--i:20">l</span>
+			<span style="--i:21">l</span>
+			<span style="--i:22">-</span>
+			<span style="--i:23">i</span>
+			<span style="--i:24">n</span>
+			<span style="--i:25">-</span>
+			<span style="--i:26">p</span>
+			<span style="--i:27">r</span>
+			<span style="--i:28">o</span>
+			<span style="--i:29">c</span>
+			<span style="--i:30">e</span>
+			<span style="--i:31">s</span>
+			<span style="--i:32">s</span>
+			<span style="--i:33">.</span>
+			<span style="--i:34">.</span>
+			<span style="--i:35">.</span>
+		</div>
 	</div>
+
+	<script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+
+        sidebar.addEventListener("mouseover", ()=>{
+            if(!sidebar.classList.contains("open")) {
+                setTimeout(() => {
+                    if (!sidebar.classList.contains("open")) {
+                        sidebar.classList.add("open");
+                        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                    }
+                }, 500)
+            }
+        });
+
+
+        sidebar.addEventListener("mouseleave", () => {
+	            sidebar.classList.remove("open");
+	            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+        })
+
+	</script>
 </body>
 </html>
