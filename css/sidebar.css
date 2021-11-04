@@ -125,7 +125,7 @@
     background-color: white;
 }
 
-.sidebar li a{
+.sidebar li a:not(.langSwitcher){
     display: flex;
     height: 100%;
     width: 100%;
@@ -135,7 +135,7 @@
     transition: all 0.4s ease;
     background: #171717;
 }
-.sidebar li a:hover{
+.sidebar li a:not(.langSwitcher):hover{
     background: #FFF;
 }
 .sidebar li a .links_name{

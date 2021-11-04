@@ -6,16 +6,16 @@
 }
 
 .cursor {
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
+    width: 7vh;
+    height: 7vh;
+    border: 0.5vh solid white;
     border-radius: 50%;
     transition: top 50ms ease-in-out, left 50ms ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .point {
-    width: 6px;
-    height: 6px;
+    width: 1vh;
+    height: 1vh;
     background-color: white;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -32,6 +32,7 @@
     border-radius: 50%;
     animation: clickAnim 0.5s forwards;
     z-index: 999;
+    pointer-events: none;
 }
 
 @keyframes clickAnim {

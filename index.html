@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title class="language_change l_title">Arknights Tools</title>
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 	<script src="./js/function.js"></script>
 	<script src="./js/cursors.js"></script>
+	<script src="./js/language.js"></script>
 	<script src="./js/sidebar.js"></script>
 	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 	<link rel="stylesheet" href="css/sidebar.css">
@@ -22,32 +24,30 @@
 	<div class="sidebar" id="sidebar">
 		<div class="logo-details">
 			<i class='bx bxs-box icon' style='color:#ffffff'></i>
-			<div class="logo_name">Arknights Tools</div>
+			<div class="logo_name language_change l_title">Arknights Tools</div>
 			<i class='bx bx-menu' id="btn" ></i>
 		</div>
 		<ul class="nav-list">
 			<li>
 				<a href="#">
 					<i class='bx bx-home'></i>
-					<span class="links_name">Home</span>
+					<span class="links_name language_change l_home">Home</span>
 				</a>
-				<span class="tooltip">Home</span>
+				<span class="tooltip language_change l_home">Home</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-user' ></i>
-					<span class="links_name">test</span>
+					<span class="links_name language_change l_test">test</span>
 				</a>
-				<span class="tooltip">test</span>
+				<span class="tooltip language_change l_test">test</span>
 			</li>
 			<li class="profile">
 				<div class="profile-details">
 					<div class="name_job">
-						<div class="name">Language</div>
+						<div class="name language_change l_language">Languages</div>
 						<div class="job">
-							<a href="#en">EN</a>
-							<p> | </p>
-							<a href="#zh">ZH</a>
+							<p><a href="#en" class="langSwitcher" id="en">EN</a> | <a href="#zh" class="langSwitcher" id="zh">ZH</a></p>
 						</div>
 					</div>
 				</div>

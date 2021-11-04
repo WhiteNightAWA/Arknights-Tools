@@ -12,3 +12,7 @@ html {
     z-index: 2;
     color: white;
 }
+
+.langSwitcher {
+    text-decoration: none;
+}
