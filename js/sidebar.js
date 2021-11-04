@@ -4,15 +4,18 @@ document.addEventListener("DOMContentLoaded", function() {
     let sidebar = document.querySelector(".sidebar");
     let closeBtn = document.querySelector("#btn");
 
-    sidebar.addEventListener("mouseover", () => {
-        if (!sidebar.classList.contains("open")) {
-            setTimeout(() => {
+    sidebar.addEventListener("mouseover", (e) => {
+        console.log(e)
+        if (!e.toElement.classList.contains("l_title")) {
+            if (!sidebar.classList.contains("open")) {
+                setTimeout(() => {
 
-                if (sidebar.matches(":hover")) {
-                    sidebar.classList.add("open");
-                    closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-                }
-            }, 500)
+                    if (sidebar.matches(":hover")) {
+                        sidebar.classList.add("open");
+                        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                    }
+                }, 500)
+            }
         }
     });
 
