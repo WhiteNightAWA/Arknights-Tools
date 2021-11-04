@@ -8,36 +8,7 @@ html {
 
 .content {
     margin-left: 78px;
-    color: white;
-    position: absolute;
-    z-index: 0;
-}
-
-
-.title {
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh;
-}
-
-.title span {
     position: relative;
-    display: inline-block;
-    animation: wavyAnim 1s ease-in-out infinite;
-    animation-delay: calc(0.01s *var(--i));
-}
-
-@keyframes wavyAnim {
-    0% {
-        transform: translateY(0px);
-    }
-    20% {
-        transform: translateY(-20px)
-    }
-    50% {
-        transform: translateY(0px);
-    }
+    z-index: 2;
+    color: white;
 }
