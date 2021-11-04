@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function(){
     const point = document.querySelector(".point");
     const cursor = document.querySelector(".cursor");
@@ -22,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         setTimeout(() => {
             span.remove()
-        }, 500)
+        }, 1000)
     });
 
 
@@ -34,5 +33,8 @@ document.addEventListener("DOMContentLoaded", function(){
             cursor.id = null;
         })
     });
+
+    console.log("cursors.js ok");
+
 });
 

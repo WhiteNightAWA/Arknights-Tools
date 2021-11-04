@@ -18,18 +18,13 @@
 		<div class="point cursors"></div>
 		<div class="cursor cursors"></div>
 	</div>
-	<div class="sidebar">
+	<div class="sidebar" id="sidebar">
 		<div class="logo-details">
 			<i class='bx bxs-box icon' style='color:#ffffff'></i>
 			<div class="logo_name">Arknights Tools</div>
 			<i class='bx bx-menu' id="btn" ></i>
 		</div>
 		<ul class="nav-list">
-			<li>
-				<i class='bx bx-search' ></i>
-				<input type="text" placeholder="Search... (developing)">
-				<span class="tooltip">Search</span>
-			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-home'></i>
@@ -93,30 +88,7 @@
 			<span style="--i:34">.</span>
 			<span style="--i:35">.</span>
 		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut beatae dicta, dolorem dolores doloribus ea, expedita explicabo illo impedit incidunt itaque laboriosam molestiae necessitatibus nihil nisi nulla, quia quibusdam rerum tenetur ut voluptates voluptatibus! Adipisci, aut consectetur corporis delectus doloribus enim, excepturi incidunt laboriosam maiores provident quas sapiente sit sunt voluptas voluptatibus. Aliquam dignissimos est nisi odio possimus. Eum ipsa laboriosam placeat saepe vero. Accusamus aliquid animi aspernatur atque cum distinctio doloremque dolorum eaque enim est, et, explicabo fugiat hic id ipsum magnam minima minus molestias necessitatibus nesciunt perferendis quae quibusdam rem saepe sunt temporibus unde ut veniam!</p>
 	</div>
-
-	<script>
-        let sidebar = document.querySelector(".sidebar");
-        let closeBtn = document.querySelector("#btn");
-
-        sidebar.addEventListener("mouseover", ()=>{
-            if(!sidebar.classList.contains("open")) {
-                setTimeout(() => {
-
-                    if (sidebar.matches(":hover")) {
-                        sidebar.classList.add("open");
-                        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-                    }
-                }, 500)
-            }
-        });
-
-
-        sidebar.addEventListener("mouseleave", () => {
-	            sidebar.classList.remove("open");
-	            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-        })
-
-	</script>
 </body>
 </html>

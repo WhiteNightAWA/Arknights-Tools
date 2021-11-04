@@ -3,6 +3,12 @@ html {
     margin: 0;
     cursor: none;
     overflow: hidden;
+    font-family: "Comic Sans MS", monospace;
+}
+
+.content {
+    margin-left: 78px;
+    color: white;
 }
 
 
