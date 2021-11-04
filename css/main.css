@@ -9,6 +9,8 @@ html {
 .content {
     margin-left: 78px;
     color: white;
+    position: absolute;
+    z-index: 0;
 }
 
 
