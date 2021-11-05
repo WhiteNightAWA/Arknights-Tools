@@ -54,6 +54,7 @@
     transition: all 0.4s;
     border-radius: 8px;
     position: absolute;
+    z-index: 2;
 
     order: 1;
 }
