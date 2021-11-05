@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function changePage () {
         setTimeout(function() {
-            const page = window.location.href.split("/").pop() + "_page";
+            const page = document.location.href.split("/").pop() + "_page";
             console.log(page);
             pages.forEach((e) => {
                 if (e.classList.contains(page)) {
