@@ -4,8 +4,15 @@ html {
     overflow: hidden;
     font-family: "Comic Sans MS", monospace;
     cursor: none; !important
+    min-height: 100vh;
+}
+
+.index {
+    margin-left: 78px;
+    width: calc(100% - 78px)
 }
 
 .canClick {
     cursor: none; !important
 }
+

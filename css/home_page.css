@@ -11,8 +11,8 @@
 }
 
 .home_page .cards {
-    box-sizing: border-box;
     min-height: 100vh;
+    box-sizing: border-box;
     height: 100%;
     width: calc(100% - 78px);
     padding: 0;
