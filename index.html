@@ -4,13 +4,7 @@
 	<meta charset="UTF-8">
 	<title class="language_change l_title">Arknights Tools</title>
 <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-	<script src="js/pages.js"></script>
-	<script src="./js/cursors.js"></script>
-	<script src="./js/language.js"></script>
-	<script src="./js/pages.js"></script>
-	<script src="./js/sidebar.js"></script>
-	<script src="./js/setting.js"></script>
-	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+	<link rel="stylesheet" href="css/preloader.css">
 	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="css/sidebar.css">
 	<link rel="stylesheet" href="css/pages.css">
@@ -24,6 +18,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<!--	<div class="preloader">-->
+<!--		<div class="counter">0</div>-->
+<!--	</div>-->
 	<div class="cursors">
 		<div class="point cursors"></div>
 		<div class="cursor cursors"></div>
@@ -92,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="materials_page pages hidden">
+		<div class="materials_page pages hidden visuallyHidden">
 			<div class="cont">
 				<div class="card">
 					<h1 class="language_change l_inProcess">
@@ -101,7 +98,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="setting_page pages hidden">
+		<div class="setting_page pages hidden visuallyHidden">
 			<div class="cont">
 				<div class="card">
 					<h1 class="language_change l_setting">Setting</h1>
@@ -856,10 +853,19 @@
 		</div>
 	</section>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
 	<script>
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
             alert("It has been detected that you are using a mobile device! It is recommended that you use a desktop or laptop to browse this website for the best experience! (The mobile version is under development)\n已檢測到您正在使用移動設備！ 建議您使用台式機或筆記本電腦瀏覽本網站以獲得最佳體驗！ （手機版正在開發中）")
         }
 	</script>
+	<script src="js/pages.js"></script>
+	<script src="./js/cursors.js"></script>
+	<script src="./js/language.js"></script>
+	<script src="./js/pages.js"></script>
+	<script src="./js/sidebar.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="./js/setting.js"></script>
 </body>
 </html>

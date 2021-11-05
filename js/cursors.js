@@ -34,7 +34,5 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     });
 
-    console.log("cursors.js ok");
-
 });
 

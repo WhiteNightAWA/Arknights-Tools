@@ -1,34 +1,11 @@
-.in {
-    animation: in 1s forwards;
-}
-
-@keyframes in {
-    from {
-        opacity: 0;
-    }
-    to {
-          opacity: 1;
-    }
-}
-
-.out {
-    animation: out 1s forwards;
-}
-
-@keyframes out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
 .hidden {
+    display: none;
+}
+
+.visuallyHidden {
     opacity: 0;
 }
 
-.show {
-    opacity: 1;
+.pages {
+    transition: all 1s linear;
 }

@@ -78,6 +78,7 @@
     clip-path: circle(60px at center);
     transition: 0.5s;
     height: 100%;
+    pointer-events: all;
 }
 
 .home_page .card .circle:hover {

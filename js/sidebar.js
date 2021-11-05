@@ -20,17 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     sidebar.onmouseleave = (e) => {
-
-        if (document.elementFromPoint(e.clientX, e.clientY).classList) {
-            if (document.elementFromPoint(e.clientX, e.clientY).classList.contains("click")) {
-                return;
+        if (document.elementFromPoint(e.clientX, e.clientY)) {
+            if (document.elementFromPoint(e.clientX, e.clientY).classList) {
+                if (document.elementFromPoint(e.clientX, e.clientY).classList.contains("click")) {
+                    return;
+                }
             }
+
+            sidebar.classList.remove("open");
+            closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
         }
-
-        sidebar.classList.remove("open");
-        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
     }
-
-    console.log("sidebar.js ok");
-
 });
