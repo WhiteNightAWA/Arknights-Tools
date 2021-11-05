@@ -1,0 +1,11 @@
+html {
+    background-color: #212121;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Comic Sans MS", monospace;
+    cursor: none; !important
+}
+
+.canClick {
+    cursor: none; !important
+}

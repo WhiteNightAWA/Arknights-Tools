@@ -198,6 +198,14 @@
 .sidebar li.profile .job{
     font-size: 12px;
 }
+.sidebar li.profile .job a {
+    width: 20px;
+    border-radius: 50%;
+}
+.sidebar li.profile .job a:hover{
+    background-color: #fff;
+    color: black;
+}
 .sidebar .profile #log_out{
     position: absolute;
     top: 50%;
@@ -207,7 +215,7 @@
     width: 100%;
     height: 60px;
     line-height: 60px;
-    border-radius: 0px;
+    border-radius: 0;
     transition: all 0.5s ease;
 }
 .sidebar.open .profile #log_out{

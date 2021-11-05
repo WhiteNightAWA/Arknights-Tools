@@ -1,12 +1,4 @@
-html {
-    background-color: #212121;
-    margin: 0;
-    overflow: hidden;
-    font-family: "Comic Sans MS", monospace;
-}
-
 .content {
-    margin-left: 78px;
     position: absolute;
     z-index: 2;
     color: white;
@@ -14,11 +6,11 @@ html {
     pointer-events: none;
 }
 
-.langSwitcher {
+.home_page .langSwitcher {
     text-decoration: none;
 }
 
-.cards {
+.home_page .cards {
     box-sizing: border-box;
     min-height: 100vh;
     height: 100%;
@@ -30,7 +22,7 @@ html {
     pointer-events: none;
 }
 
-.card {
+.home_page .card {
     position: relative;
     width: 600px;
     height: 350px;
@@ -41,7 +33,7 @@ html {
     pointer-events: none;
 }
 
-.card .circle {
+.home_page .card .circle {
     position: absolute;
     left: 0;
     top: 0;
@@ -52,7 +44,7 @@ html {
     pointer-events: visible;
 }
 
-.card .circle::before {
+.home_page .card .circle::before {
     content: '';
     position: absolute;
     top: 0;
@@ -64,12 +56,12 @@ html {
     transition: 0.5s;
 }
 
-.card .circle:hover:before {
+.home_page .card .circle:hover:before {
     clip-path: circle(400px at center);
     background-color: red;
 }
 
-.card img {
+.home_page .card img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,22 +71,22 @@ html {
     transition: 0.5s;
 }
 
-.card .circle {
+.home_page .card .circle {
     clip-path: circle(60px at center);
     transition: 0.5s;
     height: 100%;
 }
 
-.card .circle:hover {
+.home_page .card .circle:hover {
     clip-path: circle(100% at center);
 }
 
-.card .circle:hover + img {
+.home_page .card .circle:hover + img {
     left: 90%;
     height: 150%;
 }
 
-.card .content {
+.home_page .card .content {
     position: relative;
     width: 50%;
     padding: 20px 20px 20px 20px;
@@ -106,23 +98,24 @@ html {
     top: 10%;
 }
 
-.card:hover .content {
+.home_page .card:hover .content {
     opacity: 1;
     visibility: visible;
+    left: 39px;
 }
 
-.card .content h2 {
+.home_page .card .content h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 2em;
     line-height: 1em;
     margin-bottom: 10px;
 }
-.card .content p {
+.home_page .card .content p {
     color: #fff;
 }
 
-.card .content a {
+.home_page .card .content a {
     color: red;
     position: relative;
     padding: 10px 20px;

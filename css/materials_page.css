@@ -1,0 +1,7 @@
+.materials_page {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    width: 100%;
+    pointer-events: none;
+}
