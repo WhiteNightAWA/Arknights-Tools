@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title class="language_change l_title">Arknights Tools</title>
 <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-	<script src="./js/function.js"></script>
+	<script src="js/pages.js"></script>
 	<script src="./js/cursors.js"></script>
 	<script src="./js/language.js"></script>
+	<script src="./js/pages.js"></script>
 	<script src="./js/sidebar.js"></script>
 	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 	<link rel="stylesheet" href="css/sidebar.css">
@@ -29,25 +30,25 @@
 		</div>
 		<ul class="nav-list">
 			<li>
-				<a href="#" class="canClick">
+				<a href="#/home" class="canClick page_changer">
 					<i class='bx bx-home'></i>
 					<span class="links_name language_change l_home">Home</span>
 				</a>
 				<span class="tooltip language_change l_home">Home</span>
 			</li>
 			<li>
-				<a href="#" class="canClick">
+				<a href="#/materials" class="canClick page_changer">
 					<i class='bx bx-user' ></i>
-					<span class="links_name language_change l_test">test</span>
+					<span class="links_name language_change l_materials_side">Materials</span>
 				</a>
-				<span class="tooltip language_change l_test">test</span>
+				<span class="tooltip language_change l_materials_side">Materials</span>
 			</li>
 			<li class="profile">
 				<div class="profile-details">
 					<div class="name_job">
 						<div class="name language_change l_language">Languages</div>
 						<div class="job canClick">
-							<p><a href="#en" class="langSwitcher" id="en">EN</a> | <a href="#zh" class="langSwitcher" id="zh">ZH</a></p>
+							<p><a class="langSwitcher" id="en">EN</a> | <a class="langSwitcher" id="zh">ZH</a></p>
 						</div>
 					</div>
 				</div>
@@ -55,18 +56,25 @@
 			</li>
 		</ul>
 	</div>
-	<div class="content">
-		<div class="cards">
-			<div class="mat_card card">
-				<div class="circle">
-					<div class="content">
-						<h2 class="language_change l_UMC">Upgrade Materials Calculator</h2>
-						<p class="language_change l_UMCp">A calculator for characters Upgrade Materials</p>
-						<a href="#" class="canClick">Go</a>
+	<div class="home_page pages">
+		<div class="content">
+			<div class="cards">
+				<div class="mat_card card">
+					<div class="circle">
+						<div class="content">
+							<h2 class="language_change l_UMC">Upgrade Materials Calculator</h2>
+							<p class="language_change l_UMCp">A calculator for characters Upgrade Materials</p>
+							<a href="#/materials" class="canClick page_changer">Go</a>
+						</div>
 					</div>
+					<img src="./data/img/Upgrade%20materials/mat.svg" alt="materials image">
 				</div>
-				<img src="./data/img/Upgrade%20materials/mat.svg" alt="materials image">
 			</div>
+		</div>
+	</div>
+	<div class="materials_page pages" style="display: none;">
+		<div class="content">
+
 		</div>
 	</div>
 	<section class="background">

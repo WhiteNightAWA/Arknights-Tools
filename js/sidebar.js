@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let closeBtn = document.querySelector("#btn");
 
     sidebar.addEventListener("mouseover", (e) => {
-        console.log(e)
         if (!e.toElement.classList.contains("l_title")) {
             if (!sidebar.classList.contains("open")) {
                 setTimeout(() => {
@@ -22,8 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     sidebar.onmouseleave = (e) => {
 
-        if (document.elementFromPoint(e.clientX, e.clientY).classList.contains("click")) {
-            return;
+        if (document.elementFromPoint(e.clientX, e.clientY).classList) {
+            if (document.elementFromPoint(e.clientX, e.clientY).classList.contains("click")) {
+                return;
+            }
         }
 
         sidebar.classList.remove("open");
