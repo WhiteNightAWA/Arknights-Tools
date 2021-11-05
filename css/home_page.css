@@ -20,6 +20,9 @@
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .home_page .card {

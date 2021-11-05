@@ -10,11 +10,20 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(page);
             pages.forEach((e) => {
                 if (e.classList.contains(page)) {
-                    console.log(e.classList[0]+"=> block")
-                    e.style.display = "block";
+                    e.classList.add("in");
+                    e.classList.add("show");
+                    e.classList.add("hidden");
+                    setTimeout(function() {
+                            e.classList.remove("in");
+                        }, 1000)
+
                 } else {
-                    console.log(e.classList[0]+"=> none")
-                    e.style.display = "none";
+                    e.classList.add("out");
+                    e.classList.remove("show");
+                    e.classList.add("hidden");
+                    setTimeout(function() {
+                            e.classList.remove("out");
+                        }, 1000)
                 }
             });
         }, 1)
