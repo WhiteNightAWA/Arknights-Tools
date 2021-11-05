@@ -9,16 +9,19 @@
 	<script src="./js/language.js"></script>
 	<script src="./js/pages.js"></script>
 	<script src="./js/sidebar.js"></script>
+	<script src="./js/setting.js"></script>
 	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="css/sidebar.css">
 	<link rel="stylesheet" href="css/pages.css">
 	<link rel="stylesheet" href="css/cursors.css">
+	<link rel="stylesheet" href="css/setting.css">
 	<link rel="stylesheet" href="css/background.css">
 	<link rel="stylesheet" href="css/home_page.css">
 	<link rel="stylesheet" href="css/materials_page.css">
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="cursors">
@@ -46,12 +49,25 @@
 				</a>
 				<span class="tooltip language_change l_materials_side">Materials</span>
 			</li>
+			<li>
+				<a href="#/setting" class="canClick page_changer">
+					<i class="fa fa-gear"></i>
+					<span class="links_name language_change l_setting">Setting</span>
+				</a>
+				<span class="tooltip language_change l_setting">Setting</span>
+			</li>
 			<li class="profile">
 				<div class="profile-details">
 					<div class="name_job">
 						<div class="name language_change l_language">Languages</div>
 						<div class="job canClick">
-							<p><a class="langSwitcher" id="en">EN</a> | <a class="langSwitcher" id="zh">ZH</a></p>
+							<p>
+								<a class="langSwitcher" id="en">EN</a>
+								 |
+								<a class="langSwitcher" id="zh-tw">繁</a>
+								 |
+								<a class="langSwitcher" id="zh-cn">简</a>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -82,6 +98,55 @@
 					<h1 class="language_change l_inProcess">
 						This Page Is Still in Process...
 					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="setting_page pages hidden">
+			<div class="cont">
+				<div class="card">
+					<h1 class="language_change l_setting">Setting</h1>
+					<div class="language_setting">
+						<h2 class="language_change l_language">Language</h2>
+						<div class="selectContainer">
+							<div class="selectBox">
+								<div class="languageSelector selectOptionContainer">
+									<div class="selectOption canClick lang_to|en">
+										<input type="radio" class="selectRadio lang_to|en" id="select_en" name="category">
+										<label for="select_en" class="lang_to|en">English</label>
+									</div>
+									<div class="selectOption canClick lang_to|zh-tw">
+										<input type="radio" class="selectRadio lang_to|zh-tw" id="select_zh-tw" name="category">
+										<label for="select_zh-tw" class="lang_to|zh-tw">中文 (繁體)</label>
+									</div>
+									<div class="selectOption canClick lang_to|zh-cn">
+										<input type="radio" class="selectRadio lang_to|zh-cn" id="select_zh-cn" name="category">
+										<label for="select_zh-cn" class="lang_to|zh-cn">中文 (简體)</label>
+									</div>
+								</div>
+								<div class="selected to_languageSelector canClick">
+									<p class="language_change l_now_language">English</p>
+									<i class='bx bx-chevron-down arrow'></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="server_setting">
+						<h2 class="language_change l_server">Server</h2>
+						<div class="selectContainer">
+							<div class="selectBox">
+								<div class="serverSelector selectOptionContainer">
+									<div class="selectOption canClick server_to|TW">
+										<input type="radio" class="selectRadio server_to|TW" id="TW_server" name="category">
+										<label for="TW_server" class="server_to|TW">台服</label>
+									</div>
+								</div>
+								<div class="selected to_serverSelector canClick">
+									<p class="">台服</p>
+									<i class='bx bx-chevron-down arrow'></i>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

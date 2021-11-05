@@ -1,0 +1,109 @@
+.setting_page {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    width: calc(100% - 78px);
+    pointer-events: none;
+    min-height: 100vh;
+}
+
+.setting_page .cont {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+.setting_page .card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    flex-direction: column;
+
+
+}
+
+.setting_page .card h1 {
+    font-size: 70px;
+}
+
+.setting_page .card .server_setting, .language_setting {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.setting_page .card .selectBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.setting_page .card .selectBox .selectOptionContainer {
+    background-color: #424242;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 60px;
+    transition: all 0.4s;
+    border-radius: 8px;
+    position: absolute;
+
+    order: 1;
+}
+
+.setting_page .card .selectBox .selectOptionContainer.active {
+    max-height: none;
+    opacity: 1;
+}
+
+.setting_page .card .selectBox .selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting_page .card .selectBox .selectOptionContainer.active + .selected i {
+    transform: rotateX(180deg);
+
+}
+
+.setting_page .card .selectBox .selected i {
+    font-size: 30px;
+    transition: all 0.4s;
+}
+
+.setting_page .card .selectBox .selectOption,
+.setting_page .card .selectBox .selected {
+    padding: 12px 24px;
+    pointer-events: auto;
+}
+
+.setting_page .card .selectBox .selectOption:hover {
+    background-color: gray;
+
+}
+
+.setting_page .card .selectBox .selectOption .selectRadio {
+    display: none;
+}
+
+.setting_page .card .selectBox .selected {
+    background-color: gray;
+    border-radius: 8px;
+    position: relative;
+
+    order: 0;
+}
+
+.setting_page .card .selectBox .selected,
+.setting_page .card .selectBox .selectOptionContainer {
+    width: 200px;
+}
+

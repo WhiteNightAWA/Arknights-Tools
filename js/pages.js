@@ -12,18 +12,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (e.classList.contains(page)) {
                     e.classList.add("in");
                     e.classList.add("show");
-                    e.classList.add("hidden");
+                    e.classList.remove("hidden");
                     setTimeout(function() {
                             e.classList.remove("in");
                         }, 1000)
 
                 } else {
-                    e.classList.add("out");
-                    e.classList.remove("show");
+                    if (e.classList.contains("show")) {
+                        e.classList.remove("show");
+                        e.classList.add("out");
+                    }
                     e.classList.add("hidden");
                     setTimeout(function() {
+                        if (e.classList.contains("out")) {
                             e.classList.remove("out");
-                        }, 1000)
+                        }
+                    }, 1000)
                 }
             });
         }, 1)

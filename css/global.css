@@ -12,7 +12,7 @@ html {
     width: calc(100% - 78px)
 }
 
-.canClick {
+.canClick, .canClick * {
     cursor: none; !important
 }
 

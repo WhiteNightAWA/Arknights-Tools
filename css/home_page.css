@@ -97,7 +97,6 @@
     visibility: hidden;
     opacity: 0;
     left: -10%;
-    pointer-events: none;
     top: 10%;
 }
 
