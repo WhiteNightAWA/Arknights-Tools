@@ -1,10 +1,15 @@
+let last = "";
 let loaded = "";
 const preload = new createjs.LoadQueue();
 $(".preloader").attr('data-content','Loading');
 preload.on("progress", e => {
     let progress = Math.floor(e.progress * 100);
     $(".counter").text(progress)
-    loaded = `Loading: ${Object.keys(e.currentTarget._loadedRawResults).pop()}` + "\n" + loaded;
+    let add = `Loading: ${Object.keys(e.currentTarget._loadedRawResults).pop()}`;
+    if (add !== last) {
+        loaded = add + "\n" + loaded;
+    }
+    last = add;
     ($(".load_log")).text(loaded);
     (document.querySelector(".preloader .bar")).style.width = `${progress}%`
     if (progress === 100) {
