@@ -1,10 +1,10 @@
 .materials_page * {
     pointer-events: none;
+    user-select: none;
 }
 
 .materials_page {
     position: absolute;
-    z-index: 0;
     color: white;
     width: calc(100% - 78px);
     overflow-y: auto;
@@ -38,7 +38,7 @@
 
 .materials_page .left {
     background-color: rgba(255,255,255,0.2);
-    border-radius: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -74,4 +74,149 @@
     color: white;
     top: -20px;
     position: relative;
+}
+
+.materials_page .left .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    z-index: 1;
+    overflow-y: scroll;
+    pointer-events: auto;
+    background-color: rgba(49, 49, 49, 0.5);
+}
+
+.materials_page .left .container::-webkit-scrollbar{
+    width:6px;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.materials_page .left .container::-webkit-scrollbar-thumb{
+    background-color: #94948f;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.materials_page .left .container .item {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 1;
+    pointer-events: auto;
+    justify-content: space-evenly;
+    transition: all 1s;
+}
+
+.materials_page .left .container .item .cell {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    text-align: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.materials_page .left .container .item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.materials_page .left .container .item h1 {
+    color: gray;
+    text-align: center;
+    height: 100%;
+    top: 25%;
+}
+
+.materials_page .control * {
+    pointer-events: auto;
+}
+
+.materials_page .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 8px;
+    transition: background-color 1s;
+}
+
+.materials_page .control input {
+    width: 100%;
+    pointer-events: visible;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    color: white;
+
+}
+
+.materials_page .control input::-webkit-outer-spin-button,
+.materials_page .control input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.materials_page .control input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.materials_page .control:focus-within {
+
+    background-color: rgba(0,0,0,0.8);
+}
+
+.materials_page .control input:focus {
+
+
+}
+
+.materials_page .item .show h2 {
+    color: #FFFFFF;
+    /*margin: 0 20px;*/
+    height: 100%;
+    width: 50px;
+    text-align: center;
+}
+
+/*===========*/
+
+
+
+.materials_page .cover {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    width: calc(100% - 78px);
+    pointer-events: none;
+    min-height: 100vh;
+}
+
+.materials_page .cover {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+.materials_page .cover_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    flex-direction: column;
+
 }
