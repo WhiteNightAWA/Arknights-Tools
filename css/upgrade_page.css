@@ -1,0 +1,29 @@
+.upgrade_page {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    width: calc(100% - 78px);
+    pointer-events: none;
+    min-height: 100vh;
+}
+
+.upgrade_page .cont {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+.upgrade_page .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    flex-direction: column;
+
+}

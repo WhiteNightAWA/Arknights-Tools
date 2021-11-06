@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     e.classList.add('visuallyHidden');
                     setTimeout(function () {
                         e.classList.add('hidden');
-                    }, 1000)
+                    }, 20)
 
                 }
             },false);

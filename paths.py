@@ -15,4 +15,4 @@ def make_data(dir):
                 data.append(res)
     return data
 
-print(make_data("."))
+print(make_data("./data/img"))

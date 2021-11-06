@@ -1,29 +1,77 @@
+.materials_page * {
+    pointer-events: none;
+}
+
 .materials_page {
     position: absolute;
-    z-index: 2;
+    z-index: 0;
     color: white;
     width: calc(100% - 78px);
-    pointer-events: none;
-    min-height: 100vh;
+    overflow-y: auto;
+    height: 100vh;
+    top : 0;
+    left: 78px;
 }
 
 .materials_page .cont {
-    justify-content: center;
-    align-items: center;
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 100px);
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.materials_page .cont .left,
+.materials_page .cont .right {
+    align-items: center;
+    width: calc((100% - 78px)/2);
+    height: 100%;
+    margin: 50px;
+}
+
+.materials_page .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
-.materials_page .card {
+.materials_page .left {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    width: 500px;
-    height: 400px;
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 20px;
     flex-direction: column;
+}
 
+.materials_page .rightTop,
+.materials_page .rightBottom {
+    background-color: rgba(255,255,255,0.2);
+    height: calc((100vh - 40px) / 2);
+    /*width: calc((100vh - 78px) / 4);*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.materials_page .rightTop h1,
+.materials_page .rightBottom h1{
+    position: relative;
+    top: -20px
+}
+
+.materials_page .rightBottom {
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+.materials_page .rightTop {
+    margin-bottom: 25px;
+    border-radius: 50px;
+}
+
+.materials_page .left h1 {
+    color: white;
+    top: -20px;
+    position: relative;
 }
