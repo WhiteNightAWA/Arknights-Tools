@@ -5,13 +5,14 @@ preload.on("progress", e => {
     let progress = Math.floor(e.progress * 100);
     $(".counter").text(progress)
     loaded = `Loading: ${Object.keys(e.currentTarget._loadedRawResults).pop()}` + "\n" + loaded;
-    $(".load_log").text(loaded);
-
+    ($(".load_log")).text(loaded);
+    (document.querySelector(".preloader .bar")).style.width = `${progress}%`
     if (progress === 100) {
-        $(".preloader").attr('data-content','DONE');
-        $(".counter").addClass("hide");
-        $(".preloader").addClass("active");
-        $(".load_log").addClass("hide");
+        ($(".preloader")).attr('data-content','DONE');
+        (document.querySelector(".counter")).classList.add("hide");
+        document.querySelector(".preloader").classList.add("active");
+        document.querySelector(".preloader .bar").classList.add("hide");
+        document.querySelector(".load_log").classList.add("hide");
     }
 })
 

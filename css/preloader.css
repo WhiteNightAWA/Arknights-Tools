@@ -39,6 +39,7 @@
     opacity: 0;
     transition: 1s;
     pointer-events: none;
+
 }
 
 .preloader.active {
@@ -55,5 +56,16 @@
     z-index: 1;
     top: 75vh;
     white-space: pre-line;
+    left: 0;
+}
+
+.preloader .bar {
+    height: 5px;
+    background-color: white;
+    top: 50%;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 5px white);
     left: 0;
 }
