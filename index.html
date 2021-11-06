@@ -18,9 +18,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<!--	<div class="preloader">-->
-<!--		<div class="counter">0</div>-->
-<!--	</div>-->
+	<div class="preloader">
+		<div class="counter">0</div>
+		<div class="load_log">
+			hello
+		</div>
+	</div>
 	<div class="cursors">
 		<div class="point cursors"></div>
 		<div class="cursor cursors"></div>
@@ -84,7 +87,7 @@
 								<a href="#/materials" class="canClick page_changer">Go</a>
 							</div>
 						</div>
-						<img src="./data/img/Upgrade%20materials/mat.svg" alt="materials image">
+						<img src="./data/img/Upgrade_materials/mat.svg" alt="materials image">
 					</div>
 				</div>
 			</div>
@@ -855,6 +858,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+	<script src="js/preloader.js"></script>
 	<script>
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
             alert("It has been detected that you are using a mobile device! It is recommended that you use a desktop or laptop to browse this website for the best experience! (The mobile version is under development)\n已檢測到您正在使用移動設備！ 建議您使用台式機或筆記本電腦瀏覽本網站以獲得最佳體驗！ （手機版正在開發中）")
@@ -865,7 +869,6 @@
 	<script src="./js/language.js"></script>
 	<script src="./js/pages.js"></script>
 	<script src="./js/sidebar.js"></script>
-	<script src="js/preloader.js"></script>
 	<script src="./js/setting.js"></script>
 </body>
 </html>

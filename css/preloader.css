@@ -12,13 +12,15 @@
     display: flex;
 }
 .preloader:before {
-    content: "Loading";
+    content: attr(data-content);
     position: absolute;
     font-weight: 900;
     font-size: 12em;
     text-transform: uppercase;
     color: rgba(225,225,225,0.2);
 }
+
+
 
 .preloader .counter {
     position: relative;
@@ -43,4 +45,15 @@
     transform: translateY(-100vh);
     transition: 2s ease-in-out;
     transition-delay: 1s;
+}
+
+.preloader .load_log {
+    position: absolute;
+    color: rgba(255,255,255,0.5);
+    font-size: 1vh;
+    font-weight: 700;
+    z-index: 1;
+    top: 75vh;
+    white-space: pre-line;
+    left: 0;
 }
