@@ -146,7 +146,6 @@
     width: 50px;
     height: 100%;
     border-radius: 5px;
-    padding: 0 8px;
     transition: background-color 1s;
 }
 
@@ -170,7 +169,6 @@
 }
 
 .materials_page .control:focus-within {
-
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -185,6 +183,49 @@
     height: 100%;
     width: 50px;
     text-align: center;
+}
+
+
+
+.materials_page .cell.rate_0 {
+    background-image: url("../data/img/background/rate0_item_bg.png");
+}
+.materials_page .cell.rate_1 {
+    background-image: url("../data/img/background/rate1_item_bg.png");
+}
+.materials_page .cell.rate_2 {
+    background-image: url("../data/img/background/rate2_item_bg.png");
+}
+.materials_page .cell.rate_3 {
+    background-image: url("../data/img/background/rate3_item_bg.png");
+}
+.materials_page .cell.rate_4 {
+    background-image: url("../data/img/background/rate4_item_bg.png");
+}
+
+.materials_page .item .control div {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+    transition: background-color 1s;
+}
+
+
+.materials_page .item .control div:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.materials_page .item .control div.top_click {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.materials_page .item .control div.bottom_click {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /*===========*/
@@ -220,3 +261,4 @@
     flex-direction: column;
 
 }
+
